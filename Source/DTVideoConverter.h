@@ -40,13 +40,47 @@ typedef void (^DTVideoConverterCompletionHandler) (NSError * _Nullable error);
  */
 @property (copy, nullable) DTVideoConverterProgressHandler progressHandler;
 
-
+/**
+ *  Create instance with given source path.
+ *
+ *  @param sourcePath The source video path.
+ *
+ *  @return Instance of DTVideoConverter.
+ */
 + (instancetype)videoConverterWithSourcePath:(NSString *)sourcePath;
+
+/**
+ *  Create instance with given file URL.
+ *
+ *  @param sourcePath The source video URL.
+ *
+ *  @return Instance of DTVideoConverter.
+ */
 + (instancetype)videoConverterWithSourceURL:(NSURL *)sourceURL;
 
+/**
+ *  Create instance with given source path.
+ *
+ *  @param sourcePath The source video path.
+ *
+ *  @return Instance of DTVideoConverter.
+ */
 - (instancetype)initWithSourcePath:(NSString *)sourcePath;
+
+/**
+ *  Create instance with given file URL.
+ *
+ *  @param sourcePath The source video URL.
+ *
+ *  @return Instance of DTVideoConverter.
+ */
 - (instancetype)initWithSourceURL:(NSURL *)sourceURL;
 
+/**
+ *  Start convert video via asynchronously.
+ *
+ *  @param completionHandler The block for notify convert is completion.
+ */
 - (void)startConvertWithCompletionHandler:(nullable DTVideoConverterCompletionHandler)completionHandler;
 
 @end
