@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:DTVideoConveter.xcodeproj">
+      location = "self:/Users/EdenLi/Desktop/DTVideoConveter/DTVideoConverter.xcodeproj">
    </FileRef>
 </Workspace>

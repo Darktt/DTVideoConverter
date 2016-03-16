@@ -7,16 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		520BC9951C97DBDB000A3CC8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520BC9941C97DBDB000A3CC8 /* MobileCoreServices.framework */; };
 		526181B01C92597D001EC6D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 526181AF1C92597D001EC6D6 /* main.m */; };
 		526181B31C92597D001EC6D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 526181B21C92597D001EC6D6 /* AppDelegate.m */; };
 		526181B61C92597D001EC6D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526181B51C92597D001EC6D6 /* ViewController.m */; };
 		526181B91C92597D001EC6D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526181B71C92597D001EC6D6 /* Main.storyboard */; };
 		526181BB1C92597D001EC6D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526181BA1C92597D001EC6D6 /* Assets.xcassets */; };
 		526181BE1C92597D001EC6D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526181BC1C92597D001EC6D6 /* LaunchScreen.storyboard */; };
+		526181C61C9263DA001EC6D6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 526181C51C9263DA001EC6D6 /* AVFoundation.framework */; };
+		526181C91C926406001EC6D6 /* DTVideoConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 526181C81C926406001EC6D6 /* DTVideoConverter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		52AA21921C994480006BF1DD /* DTFileAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AA218B1C994480006BF1DD /* DTFileAttribute.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		52AA21941C994480006BF1DD /* DTFileController+EXIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AA218F1C994480006BF1DD /* DTFileController+EXIF.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		52AA21951C994480006BF1DD /* DTFileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AA21911C994480006BF1DD /* DTFileController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		526181AB1C92597D001EC6D6 /* DTVideoConveter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DTVideoConveter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		520BC9941C97DBDB000A3CC8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		526181AB1C92597D001EC6D6 /* DTVideoConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DTVideoConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		526181AF1C92597D001EC6D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		526181B11C92597D001EC6D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		526181B21C92597D001EC6D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +33,15 @@
 		526181BA1C92597D001EC6D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		526181BD1C92597D001EC6D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		526181BF1C92597D001EC6D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		526181C51C9263DA001EC6D6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		526181C71C926406001EC6D6 /* DTVideoConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTVideoConverter.h; path = Source/DTVideoConverter.h; sourceTree = SOURCE_ROOT; };
+		526181C81C926406001EC6D6 /* DTVideoConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTVideoConverter.m; path = Source/DTVideoConverter.m; sourceTree = SOURCE_ROOT; };
+		52AA218A1C994480006BF1DD /* DTFileAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTFileAttribute.h; sourceTree = "<group>"; };
+		52AA218B1C994480006BF1DD /* DTFileAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTFileAttribute.m; sourceTree = "<group>"; };
+		52AA218E1C994480006BF1DD /* DTFileController+EXIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DTFileController+EXIF.h"; sourceTree = "<group>"; };
+		52AA218F1C994480006BF1DD /* DTFileController+EXIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DTFileController+EXIF.m"; sourceTree = "<group>"; };
+		52AA21901C994480006BF1DD /* DTFileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTFileController.h; sourceTree = "<group>"; };
+		52AA21911C994480006BF1DD /* DTFileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTFileController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				520BC9951C97DBDB000A3CC8 /* MobileCoreServices.framework in Frameworks */,
+				526181C61C9263DA001EC6D6 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,7 +60,9 @@
 		526181A21C92597D001EC6D6 = {
 			isa = PBXGroup;
 			children = (
-				526181AD1C92597D001EC6D6 /* DTVideoConveter */,
+				520BC9941C97DBDB000A3CC8 /* MobileCoreServices.framework */,
+				526181C51C9263DA001EC6D6 /* AVFoundation.framework */,
+				526181AD1C92597D001EC6D6 /* DTVideoConverterDemo */,
 				526181AC1C92597D001EC6D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,14 +70,16 @@
 		526181AC1C92597D001EC6D6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				526181AB1C92597D001EC6D6 /* DTVideoConveter.app */,
+				526181AB1C92597D001EC6D6 /* DTVideoConverter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		526181AD1C92597D001EC6D6 /* DTVideoConveter */ = {
+		526181AD1C92597D001EC6D6 /* DTVideoConverterDemo */ = {
 			isa = PBXGroup;
 			children = (
+				526181CA1C92644F001EC6D6 /* DTVideoConverter */,
+				52AA21891C994480006BF1DD /* DTFileController */,
 				526181B11C92597D001EC6D6 /* AppDelegate.h */,
 				526181B21C92597D001EC6D6 /* AppDelegate.m */,
 				526181B41C92597D001EC6D6 /* ViewController.h */,
@@ -68,6 +90,7 @@
 				526181BF1C92597D001EC6D6 /* Info.plist */,
 				526181AE1C92597D001EC6D6 /* Supporting Files */,
 			);
+			name = DTVideoConverterDemo;
 			path = DTVideoConveter;
 			sourceTree = "<group>";
 		};
@@ -79,12 +102,35 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		526181CA1C92644F001EC6D6 /* DTVideoConverter */ = {
+			isa = PBXGroup;
+			children = (
+				526181C71C926406001EC6D6 /* DTVideoConverter.h */,
+				526181C81C926406001EC6D6 /* DTVideoConverter.m */,
+			);
+			name = DTVideoConverter;
+			sourceTree = "<group>";
+		};
+		52AA21891C994480006BF1DD /* DTFileController */ = {
+			isa = PBXGroup;
+			children = (
+				52AA218A1C994480006BF1DD /* DTFileAttribute.h */,
+				52AA218B1C994480006BF1DD /* DTFileAttribute.m */,
+				52AA218E1C994480006BF1DD /* DTFileController+EXIF.h */,
+				52AA218F1C994480006BF1DD /* DTFileController+EXIF.m */,
+				52AA21901C994480006BF1DD /* DTFileController.h */,
+				52AA21911C994480006BF1DD /* DTFileController.m */,
+			);
+			name = DTFileController;
+			path = ../DTFileController/DTFileController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		526181AA1C92597D001EC6D6 /* DTVideoConveter */ = {
+		526181AA1C92597D001EC6D6 /* DTVideoConverter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 526181C21C92597D001EC6D6 /* Build configuration list for PBXNativeTarget "DTVideoConveter" */;
+			buildConfigurationList = 526181C21C92597D001EC6D6 /* Build configuration list for PBXNativeTarget "DTVideoConverter" */;
 			buildPhases = (
 				526181A71C92597D001EC6D6 /* Sources */,
 				526181A81C92597D001EC6D6 /* Frameworks */,
@@ -94,9 +140,9 @@
 			);
 			dependencies = (
 			);
-			name = DTVideoConveter;
+			name = DTVideoConverter;
 			productName = DTVideoConveter;
-			productReference = 526181AB1C92597D001EC6D6 /* DTVideoConveter.app */;
+			productReference = 526181AB1C92597D001EC6D6 /* DTVideoConverter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -113,7 +159,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 526181A61C92597D001EC6D6 /* Build configuration list for PBXProject "DTVideoConveter" */;
+			buildConfigurationList = 526181A61C92597D001EC6D6 /* Build configuration list for PBXProject "DTVideoConverter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -126,7 +172,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				526181AA1C92597D001EC6D6 /* DTVideoConveter */,
+				526181AA1C92597D001EC6D6 /* DTVideoConverter */,
 			);
 		};
 /* End PBXProject section */
@@ -149,6 +195,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52AA21921C994480006BF1DD /* DTFileAttribute.m in Sources */,
+				52AA21951C994480006BF1DD /* DTFileController.m in Sources */,
+				52AA21941C994480006BF1DD /* DTFileController+EXIF.m in Sources */,
+				526181C91C926406001EC6D6 /* DTVideoConverter.m in Sources */,
 				526181B61C92597D001EC6D6 /* ViewController.m in Sources */,
 				526181B31C92597D001EC6D6 /* AppDelegate.m in Sources */,
 				526181B01C92597D001EC6D6 /* main.m in Sources */,
@@ -282,7 +332,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		526181A61C92597D001EC6D6 /* Build configuration list for PBXProject "DTVideoConveter" */ = {
+		526181A61C92597D001EC6D6 /* Build configuration list for PBXProject "DTVideoConverter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				526181C01C92597D001EC6D6 /* Debug */,
@@ -291,13 +341,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		526181C21C92597D001EC6D6 /* Build configuration list for PBXNativeTarget "DTVideoConveter" */ = {
+		526181C21C92597D001EC6D6 /* Build configuration list for PBXNativeTarget "DTVideoConverter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				526181C31C92597D001EC6D6 /* Debug */,
 				526181C41C92597D001EC6D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
